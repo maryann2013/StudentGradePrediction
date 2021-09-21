@@ -467,7 +467,7 @@ final_features = pd.DataFrame(features)
 
 
 if st.button('Predict'):  
-    st.success('features are :',final_features)
+    st.write('features are ',final_features)
     # when the submit button is pressed
     #prediction =  loaded_model.predict(final_features)
     #st.balloons()
