@@ -459,14 +459,14 @@ features = [age, Medu, Fedu, traveltime, studytime, failures, famrel,
 
 # convert user inputs into an array fr the model
 
-final_features = [int(x) for x in features]
+#final_features = [int(x) for x in features]
 #final_features = [np.array(final_features)]
 
 
 
 
 if st.button('Predict'):           # when the submit button is pressed
-    prediction =  loaded_model.predict(final_features)
+    prediction =  loaded_model.predict(features)
     st.balloons()
     st.success('Final Grade would be : ', prediction[0])
     
